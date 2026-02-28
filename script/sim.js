@@ -4,7 +4,7 @@ module.exports.config = {
   name: "sim",
   version: "1.0.0",
   permission: 0,
-  credits: "converted by vrax",
+  credits: "Alex Jhon Ponce",
   prefix: false,
   premium: false,
   description: "Talk with SimSimi AI",
@@ -38,7 +38,7 @@ module.exports.run = async ({ api, event, args, getText }) => {
   }
 
   try {
-    const apiKey = "2a5a2264d2ee4f0b847cb8bd809ed34bc3309be7";
+    const apiKey = "2899d5d398374068b18eae52b52463d8e9204d8a";
     const apiUrl = `https://simsimi.ooguy.com/sim?query=${encodeURIComponent(query)}&apikey=${apiKey}`;
     const { data } = await axios.get(apiUrl);
 
